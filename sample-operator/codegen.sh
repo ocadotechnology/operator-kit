@@ -16,7 +16,7 @@
 
 scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-cd ${scriptdir}/../vendor/k8s.io/code-generator && ./generate-groups.sh \
+cd ${scriptdir}/../vendor/k8s.io/code-generator && bash ./generate-groups.sh \
   all \
   github.com/rook/operator-kit/sample-operator/pkg/client \
   github.com/rook/operator-kit/sample-operator/pkg/apis \
